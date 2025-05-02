@@ -1,0 +1,46 @@
+<odoo>
+    <!-- Permiso para purchase.requisition -->
+    <record id="purchase_requisition_access_all_users" model="ir.model.access">
+        <field name="name">Acceso a Solicitudes de Compra (Todos los usuarios)</field>
+        <field name="model_id" ref="purchase_requisition.model_purchase_requisition"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <!-- Permiso para purchase.requisition.line -->
+    <record id="purchase_requisition_line_access_all_users" model="ir.model.access">
+        <field name="name">Acceso a Líneas de Solicitud (Todos los usuarios)</field>
+        <field name="model_id" ref="purchase_requisition.model_purchase_requisition_line"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+    
+    <!-- Permiso para purchase.requisition.type -->
+    <record id="purchase_requisition_type_access_all_users" model="ir.model.access">
+        <field name="name">Acceso a Tipos De Contrato (Todos los usuarios)</field>
+        <field name="model_id" ref="purchase_requisition.model_purchase_requisition_type"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read">1</field>
+        <field name="perm_create">0</field>
+        <field name="perm_write">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+    <!-- Permiso para purchase.order -->
+    <record id="purchase_order_access_all_users" model="ir.model.access">
+        <field name="name">Acceso a Ordenes de compra (Todos los usuarios)</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read">1</field>
+        <field name="perm_create">0</field>
+        <field name="perm_write">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+    
+</odoo>

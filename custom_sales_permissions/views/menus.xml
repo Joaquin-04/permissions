@@ -1,0 +1,15 @@
+<odoo>
+
+    <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
+
+    <record id="sale.menu_product_pricelist_main" model="ir.ui.menu">
+      <field name="groups_id" eval="[(3, ref('product.group_product_pricelist'))]"/>
+    </record>
+
+    
+    <record id="sale.menu_product_pricelist_main" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('sales_team.group_sale_manager')),(4, ref('sales_team.group_sale_salesman')),(4, ref('sales_team.group_sale_salesman_all_leads'))]"/>
+    </record>
+
+    
+</odoo>

@@ -1,0 +1,33 @@
+<odoo>
+    <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
+    <record id="purchase.menu_purchase_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- Menú RFQ - Accesible para Administradores y Usuarios de Compras -->
+    <record id="purchase.menu_purchase_rfq" model="ir.ui.menu">
+        <field name="groups_id" eval="[
+            (4, ref('purchase.group_purchase_manager')),
+            (4, ref('purchase.group_purchase_user'))
+        ]"/>
+    </record>
+
+    <!-- Formulario de Compra - Accesible para Administradores y Usuarios -->
+    <record id="purchase.menu_purchase_form_action" model="ir.ui.menu">
+        <field name="groups_id" eval="[
+            (4, ref('purchase.group_purchase_manager')),
+            (4, ref('purchase.group_purchase_user'))
+        ]"/>
+    </record>
+
+    <!-- Gestión de Proveedores - Accesible para Administradores y Usuarios -->
+    <record id="purchase.menu_procurement_management_supplier_name" model="ir.ui.menu">
+        <field name="groups_id" eval="[
+            (4, ref('purchase.group_purchase_manager')),
+            (4, ref('purchase.group_purchase_user'))
+        ]"/>
+    </record>
+
+    
+    
+</odoo>
