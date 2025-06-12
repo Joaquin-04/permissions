@@ -1,4 +1,19 @@
 <odoo>
+    <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
+    <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_113_2aee497f'))]"/>
+    </record>
+
+    <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
+    <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_113_2aee497f'))]"/>
+    </record>
+
+    <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
+    <record id="stock.menu_warehouse_report" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_113_2aee497f'))]"/>
+    </record>
+
 
     <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
 

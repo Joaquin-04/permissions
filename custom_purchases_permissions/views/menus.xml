@@ -1,8 +1,25 @@
 <odoo>
     <!--   ASIGNAR GRUPO "USUARIO INTERNO" AL MENÚ      -->
     <!--       COMPRA                   -->
-    <!--       INVENTARIO                   -->
-
+   <!-- <record id="purchase.purchase_report_main" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_114_36df2e55'))]"/>
+    </record>
     
+    <record id="purchase.purchase_report" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_114_36df2e55'))]"/>
+    </record>-->
+    
+    <!--       INVENTARIO                   -->
+   <!-- <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_114_36df2e55'))]"/>
+    </record>
+
+    <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_114_36df2e55'))]"/>
+    </record>
+
+    <record id="stock.menu_warehouse_report" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('__export__.res_groups_114_36df2e55'))]"/>
+    </record>-->
     
 </odoo>

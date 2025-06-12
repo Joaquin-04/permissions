@@ -4,10 +4,14 @@
     'category': 'Sales',
     'summary': 'Control de accesos para el equipo de ventas',
     'depends': [
+        'sale', 
+        'sales_team',
         'stock'
     ],
     'data': [
-        'views/menus.xml'
+        'security/groups.xml',  # Cargar el archivo XML
+        'views/menus.xml',
+        'views/sale_order_views.xml'
     ],
     'installable': True,
     'application': False,

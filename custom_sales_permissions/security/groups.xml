@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Definir el grupo personalizado -->
+    <record id="grupo_vendedores_personalizados" model="res.groups">
+        <field name="name">Vendedores Personalizados</field>
+        <field name="category_id" ref="base.module_category_customizations"/>
+    </record>
+</odoo>

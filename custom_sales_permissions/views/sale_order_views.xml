@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Heredar la vista de formulario de sale.order -->
+    <record id="view_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Localizar el campo user_id y modificar su dominio -->
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="domain">
+                    [
+                        ('groups_id', 'in', [21, 140]),
+                        ('share', '=', False),
+                        ('company_ids', '=', company_id)
+                    ]
+                </attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
